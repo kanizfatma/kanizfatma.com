@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "git subtree push --prefix public origin gh-pages"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "prod": "cross-env NODE_ENV=production webpack -p",
+    "deploy": "git subtree push --prefix public origin gh-pages",
+    "commitmsg": "validate-commit-msg"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,29 @@
   "bugs": {
     "url": "https://github.com/kanizfatma/kanizfatma.com/issues"
   },
-  "homepage": "https://github.com/kanizfatma/kanizfatma.com#readme"
+  "homepage": "https://github.com/kanizfatma/kanizfatma.com#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "ejs-loader": "^0.3.0",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "husky": "^0.14.3",
+    "node-sass": "^4.5.3",
+    "postcss": "^6.0.11",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "validate-commit-msg": "^2.14.0",
+    "webpack": "^2",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  }
 }

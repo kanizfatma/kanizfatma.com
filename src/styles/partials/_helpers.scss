@@ -1,0 +1,107 @@
+.no-select {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.pe-n {
+  pointer-events: none;
+}
+.pe-a {
+  pointer-events: auto;
+}
+
+.ta-r {
+  text-align: right;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-c {
+  text-align: center;
+}
+
+.tt-u {
+  text-transform: uppercase;
+}
+.td-u {
+  text-decoration: underline;
+}
+.td-n {
+  text-decoration: none;
+}
+.td-lt {
+  text-decoration: line-through;
+}
+
+.of-h {
+  overflow: hidden;
+}
+.of-a {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.f-l{
+  float:left;
+}
+.f-r{
+  float:right;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fw-n{
+  font-weight: normal;
+}
+
+.d-b {
+  display: block;
+}
+.d-f {
+  display: flex;
+}
+.f-1 {
+  flex: 1;
+}
+.fd-r {
+  flex-direction: row;
+}
+.fd-c {
+  flex-direction: column;
+}
+.fw-w {
+  flex-wrap: wrap;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.jc-c {
+  justify-content: center;
+}
+.ai-c {
+  align-items: center;
+}
+.ai-fs {
+  align-items: flex-start;
+}
+.ai-fe {
+  align-items: flex-end;
+}
+.as-fs {
+  align-self: flex-start;
+}
+.as-fe {
+  align-self: flex-end;
+}
+.fs-0 {
+  flex-shrink: 0;
+}
